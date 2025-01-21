@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--
+        a태그 - 링크태그
+            페이지끼리 연결해주는 태그
+            inline 레벨
+            기본폰트 파랑, 밑줄 파랑
+            (히스토리가 있다면 보라)
+            a태그용 css를 별도로 만들어서 색, 밑줄 등을 관리
+            마우스 오버하면 손가락 커서로 변경됨
+
+        -속성
+            1)필수속성
+                href: 클릭했을때 이동할 경로
+                    -서버상 경로: ./ or ../
+                    -웹상 경로:http or https
+                    -이동할 경로가 정해지지 않은경우 임시링크 # 걸어둠
+                    -현재 페이지 내부 경로(이때도 #으로 시작. 13파일에서 자세히)
+            
+            2)옵션속성
+                target: 페이지 이동시 새탭에서 이동할지 새탭에서 이동할지 결정
+                    _self: 기본값, 현재창
+                    _blank: 새창
+    -->
+    <a href="https://www.naver.com">네이버</a>
+
+    <a href="#">
+        <img src="./img/1.jpg" alt="">
+    </a>
+
+    <!-- div가 block레벨이므로 화면의 끝에서 끝까지 영역을 잡고,
+        a는 inline 이므로 그 div의 가로 사이즈만큼 영역을 잡기때문에
+        '메뉴'라는 글씨 오른쪽 빈공간을 클릭해도 링크가 동작함-->
+    <a href="">
+        <div>메뉴</div>
+    </a>
+</body>
+
+</html>

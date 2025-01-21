@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        img 태그: inline-block 레벨(카테고리상 inline 레벨에 속함)
+            *inline-block: inline의 컨텐츠 크기 만큼만 기본 영역 잡는 속성과
+                        block의 사이즈 주변 적용되는 속성이 합쳐진것
+            
+            닫는태그가 없다.
+            사이즈 적용 가능(별도 명시X -> 이미지 원본 사이즈 그대로 표시)
+            가로 또는 세로 한쪽 사이즈만 건드리면 반대쪽 사이즈도 알아서 비율에 맞게 변경됨
+            
+            -사용법
+            <img src="이미지 경로" alt="이미지 설명">
+            1)src: 필수속성
+                    이미지 경로
+                    
+                    -경로잡는 방법-
+                        1) 같은 레벨에 있을때 - 파일명 ./파일명
+                            하위 레벨에 있을때 - 폴더명/파일명 
+                        2) 상위 레벨에 있을때 ../
+                        3) 웹상의 경로로 접근할때 - http or https
+
+            2)alt: 옵션속성
+                    이미지 설명
+                    이미지 못불러올 경우 이미지 대신 화면에 출력
+                    *웹접근성 - 시각장애인용 기기에서 읽어줌
+
+    -->
+        <!-- 같은 레벨 -->
+        <img src="./img/1.jpg" alt="여자모델 사진">
+        <img src="img/1.jpg" alt="여자모델 사진">
+
+        <!-- 상위 레벨 -->
+        <img src="../pikachu01.png" alt="">
+
+        <!-- 상위의 상위 -->
+        <img src="../../img/" alt="피카츄">
+
+        <!-- 웹상에 있는 경로 -->
+        <img src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Fstatic%2Fwww%2Fmobile%2Fedit%2F20250117_1095%2Fupload_17371084695337S13w.jpg%22&type=nf308_200&service=navermain" alt="">
+</body>
+</html>
