@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+        input 태그 - 사용자로부터 입력을 받을 수 있는 태그
+        inline레벨
+        닫는태그 없음(기본 사이즈가 정해져있음)
+
+        <input type="유형" 속성="속성값"....>
+
+        - 속성 -
+        1) value: 요소의 실제 값
+            *필수처럼 사용하는 type: button
+            *checkbox나 radio에서는 실제 화면에 나타나지 않고 정보를 넘길때 사용함(form태그)
+            
+        2) name: 요소에 이름을 달아줄때 사용
+                요소들을 그룹핑할때 사용
+                *(거의)필수처럼 사용하는 type: radio
+
+
+    -->
+
+    <!-- 많이사용 -->
+    <form action="#">
+        <input type="text" value="aa"> <br>
+        <input type="password" value="aa"> <br>
+        <input type="button" value="버튼1"> <br>
+
+        <!-- 라디오 버튼은 한번 체크가 되면 사용자가 체크 해제를 할 수 없다.
+        (유일하게 해제 할 수 있는 방법은 같은 그룹핑중 다른거 체크해야함)-->
+        <input type="radio" value="웹1" name="rd">웹1
+        <input type="radio" value="웹2" name="rd">웹2
+        <input type="radio" value="웹3" name="rd">웹3<br>
+
+
+        <input type="checkbox" value="체1" name="ck">체크박스1
+        <input type="checkbox" value="체1" name="ck">체크박스2
+        <input type="checkbox" value="체1" name="ck">체크박스3<br>
+
+        <textarea name="" id=""></textarea><br>
+
+        <input type="submit">
+    </form>
+</body>
+
+</html>
