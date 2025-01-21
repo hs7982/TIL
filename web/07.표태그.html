@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        - 표태그 -
+        table: (카태고리상) 블록레벨
+                부모로만 사용 가능
+
+
+        
+        thead, tbody, tfoot - table의 자식으로만 사용 가능
+                            (코드에 직접 쓰지 않아도 브라우저의 구조에서는 tbody로 표시됨)
+            
+        tr - table의 자식 또는 thead, tbody, tfoot의 자식으로만 사용 가능
+            가로 한줄을 의미
+            
+        th - tr의 자식으로만 사용 가능
+            한칸을 의미
+            제목
+            글자 두껍게, 가운데 정렬
+
+        td - tr의 자식으로만 사용 가능
+            한칸을 의미
+            일반 두께, 왼쪽 정렬
+
+        - 옵션 요소(써도 그만 안써도 그만) -
+            1)caption: 표 제목
+                        table 태그의 자식으로 사용 가능
+                        실제 코드의 위치와 상관 없이 표 위의 가운데 출력
+
+            2)colgroup: 여러 열들을 묶어서 css 적용
+                col: 각 열
+        ---------------------
+        - 속성
+            1) border: (table꺼)테두리 두께,
+                        단위-정수, 기본값=0
+            2) cellspacing: (table꺼)
+            3) cellpadding: (table꺼)
+            4) span: 칸을 늘린다(병합)
+                    단위-정수
+                    colspan:옆으로 늘림
+
+                    rowspan:아래로 늘림
+    -->
+
+    <table border="2" cellspacing="0" cellpadding="10">
+        <caption>표 제목</caption>
+        <colgroup>
+            <col style="width: 100px;">
+            <col>
+            <col>
+        </colgroup>
+        <thead>
+            <tr>
+                <th>1행1열</th>
+                <th>1행2열</th>
+                <th>1행3열</th>
+                <th>1행4열</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">내용</td>
+                <td>내용내용내용</td>
+                <td>내용</td>
+                <td>내용</td>
+            </tr>
+            <tr>
+                <td>내용</td>
+                <td>내용</td>
+                <td>내용</td>
+            </tr>
+            <tr>
+                <td>내용</td>
+                <td>내용</td>
+                <td>내용</td>
+                <td>내용</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
