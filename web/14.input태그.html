@@ -16,18 +16,19 @@
         <input type="유형" 속성="속성값"....>
 
         - 속성 -
-        1) value: 요소의 실제 값
+        1) type:(필수)유형
+        2) value: (옵션)요소의 실제 값
             *필수처럼 사용하는 type: button
             *checkbox나 radio에서는 실제 화면에 나타나지 않고 정보를 넘길때 사용함(form태그)
             
-        2) name: 요소에 이름을 달아줄때 사용
+        3) name: (옵션)요소에 이름을 달아줄때 사용
                 요소들을 그룹핑할때 사용
                 *(거의)필수처럼 사용하는 type: radio
 
 
     -->
 
-    <!-- 많이사용 -->
+    <p>==많이사용==</p>
     <form action="#">
         <input type="text" value="aa"> <br>
         <input type="password" value="aa"> <br>
@@ -39,15 +40,49 @@
         <input type="radio" value="웹2" name="rd">웹2
         <input type="radio" value="웹3" name="rd">웹3<br>
 
-
+        <button>버튼버튼</button>
+        <!-- input의 버튼과 같지만 닫는태그가 있음
+            form 태그 밖에서 명시되면 그냥 button으로 인식,
+            form 태그 안에서 명시되면 submit으로 인식됨 -->
         <input type="checkbox" value="체1" name="ck">체크박스1
         <input type="checkbox" value="체1" name="ck">체크박스2
         <input type="checkbox" value="체1" name="ck">체크박스3<br>
 
         <textarea name="" id=""></textarea><br>
 
+        <label for="rd_강남">
+            <input type="radio" value="강남" name="rd2" id="rd_강남">
+            강남점
+        </label>
+
+        <input type="radio" value="강남" name="rd2" id="rd_당산">
+        <label for="rd_당산">당산점</label>
         <input type="submit">
+        <input type="reset">
     </form>
+    <hr>
+
+    <p>==중간빈도==</p>
+    <input type="submit" value="확인">
+    <input type="reset">
+    <!-- submit, reset은 form 태그 안에서만 사용 가능
+            (type="button"과 같은거임)
+        submit은 정보를 넘김
+        reset은 input 요소들을 초기화함
+    -->
+
+    <input type="hidden" name=""><!-- text와 동일하지만 화면에 출력 안됨 --><br>
+    <input type="search" name="" id=""><!-- text와 동일하지만 글자 입력시 X 표시 나옴--><br>
+    <input type="file" name="" id=""><!-- 파일 업로드시 사용 --><br>
+    <input type="range" name="" id=""><br>
+    <hr>
+
+    <input type="number"><br>
+    <input type="tel"><!-- 웹페이지에서는 일반 text 필드처럼 나타나지만, 스마트기기에서는 숫자패드 나옴--><br>
+    <input type="email"><!-- form태그 안에서만 동작. 필드에 @ 있어야만 통과--><br>
+    <input type="date"><br>
+    <input type="datetime-local"><br>
+
 </body>
 
 </html>

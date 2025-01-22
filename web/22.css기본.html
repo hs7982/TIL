@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- 
+        CSS: HTML 요소에 style(디자인) 주는거
+            *상위 요소는 건드릴수 없다.
+            **스타일정보는 웹문서가 브라우저에 렌더링 되기 전에 미리 정해져 있어야 하기 때문에 
+            보통 body가 읽히기 전인 head에 명시한다.
+
+            /* css의 주석 */
+
+        - 스타일 시트 종류 -
+            1) 내부 스타일 시트: 해당 html 문서의 head 안에 style태그로 정의
+            **2) 외부 스타일 시트: 해당 html 문서의 밖에 별도의 css 파일을 만들어서 정의
+                    <link rel="stylesheet" href="css파일 경로">
+                    장점- 하나의 css 파일로 여러 html 파일 수정 가능
+
+        - 선택자 -
+            선택자{
+                속성: 속성값;
+                속성: 속성값;
+                속성: 속성값;
+            }
+            
+            **선택자 우선순위
+                1) 아이디 - #
+                2) 클래스 - .
+                3) 태그 - 태그명
+                *같은 우선순위끼리 경쟁이 붙으면 코드상 나중에 읽힌 선택자꺼가 동작
+                *link 삽입된 순서도 적용됨!!
+                ----------
+                *우선순위엔 포함되지 않지만 0순위처럼 적용되는것
+                    인라인 style속성 : 요소 내부 style속성에 css넣는거
+                
+                *우선순위 파괴
+                    !important: 우선순위 뿐만 아니라 js랑 싸워도 이김, 인라인도 이김
+                            css 특정 속성에 붙여줌
+    -->
+<style>
+    /* h1{
+        background-color: blue;
+    } */
+</style>
+
+<!-- 같은 레벨에 있는 css 폴더 안의 22.tmp.css 파일 연결 -->
+<link rel="stylesheet" href="./css/22.temp.css">
+
+</head>
+<body>
+    <h1>헬로월드</h1>
+    <div>안녕하세요</div>
+    <div class="box" id="" style="background-color: orange;">안녕하세요</div>
+    <div class="box box2" id="" style="background-color: gold;">안녕하세요</div>
+    <div class="box" id="box1">안녕하세요</div>
+</body>
+</html>

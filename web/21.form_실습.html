@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>상품주문서</h1>
+    <form action="#">
+        <fieldset>
+            <legend>개인 정보</legend>
+            <ul>
+                <li>
+                    <span>이름</span>
+                    <input type="text" name="per-name" id="per-name" placeholder="여백없이 입력">
+                </li>
+                <li>
+                    <span>연락처</span>
+                    <input type="tel" name="per-tel" id="per-tel" placeholder="연락 가능한 번호">
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>배송지 정보</legend>
+            <ul>
+                <li>
+                    <span>주소</span>
+                    <input type="text" name="name" id="name" placeholder="여백없이 입력">
+                </li>
+                <li>
+                    <span>전화번호</span>
+                    <input type="tel" name="tel" id="tel" placeholder="연락 가능한 번호">
+                </li>
+                <li>
+                    <span>메모</span>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>주문정보</legend>
+            <ul>
+                <li><label for="쇼비뇽">
+                        <input type="checkbox" name="쇼비뇽" id="쇼비뇽">
+                        칠레산 까르보나라 쇼비뇽
+                        <input type="number" name="쇼비뇽_num" id="쇼비뇽_num" value="0">
+                        개
+                    </label>
+                </li>
+                <li><label for="그리지오">
+                        <input type="checkbox" name="그리지오" id="그리지오">
+                        프랑스산 피노 그리지오
+                        <input type="number" name="그리지오_num" id="그리지오_num" value="0">
+                        개
+                    </label>
+                </li>
+                <li><label for="막걸리">
+                        <input type="checkbox" name="막걸리" id="막걸리">
+                        한국산 평창막걸리
+                        <input type="number" name="막걸리_num" id="막걸리_num" value="0">
+                        개
+                    </label>
+                </li>
+            </ul>
+        </fieldset>
+        <div>
+            <input type="submit" value="확인">
+            <input type="reset" value="취소">
+        </div>
+    </form>
+</body>
+
+</html>

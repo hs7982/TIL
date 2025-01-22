@@ -1,0 +1,21 @@
+/* 외부 스타일 시트에서는 별도의 <style> 태그를 쓰지 않음 */
+h1{
+    background-color: blue;
+    color: #fff;
+}
+div{
+    width: 100px;
+    height: 100px;
+    background-color: skyblue !important;
+}
+.box{
+    width: 100px;
+
+    background-color: pink;
+}
+.box2{
+    background-color: red;
+}
+#box1{
+    width: 150px;
+}

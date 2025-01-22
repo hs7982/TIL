@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+        select: 여러개의 옵션을 리스트처럼 나열하고 그 중에서 선택할 수 있게 하는 태그
+                부모로만 사용 가능
+                카테고리상 inline레벨
+
+        option:  select의 자식(자손)으로만 사용 가능
+                (select의 실제 리스트 알맹이)
+        
+        - 속성 -
+            1) selected: option에 적용
+                        checked나 autofocus처럼 처음부터 선택되서 나타남
+
+            2) multiple: select에 적용
+                        여러개 선택 가능하게 되지만, 디자인상 bad, 잘안씀
+
+            3) name: select에 적용
+            4) value: option에 적용
+    -->
+
+    <select name="sel">
+        <option value=""></option>
+        <option value="web1" selected>웹1</option>
+        <option value="web2">웹2</option>
+        <option value="web3">웹3</option>
+    </select>
+
+    <br>
+
+    <!-- optgroup: option들을 그룹핑 해주는거
+                    lable 속성: 해당 optgroup에 이름표 달아줌-->
+                    <select name="sel">
+    <optgroup label="웹학과">
+        <option value="web1">웹1</option>
+        <option value="web2">웹2</option>
+        <option value="web3">웹3</option>
+    </optgroup>
+    <optgroup label="디자인학과">
+        <option value="포토샵">포토샵</option>
+        <option value="일러스트">일러스트</option>
+        <option value="피그마">피그마</option>
+    </optgroup>
+    </select>
+
+    <br>
+    <input type="text" list="d_list">
+    <datalist id="d_list">
+        <option value="web1">웹1</option>
+        <option value="web2">웹2</option>
+        <option value="web3">웹3</option>
+        <option value="포토샵">포토샵</option>
+        <option value="일러스트">일러스트</option>
+        <option value="피그마">피그마</option>
+    </datalist>
+</body>
+
+</html>
