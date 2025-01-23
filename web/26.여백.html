@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            = 여백 =
+
+            단위 - px, %
+                *여백값은 상속안됨
+
+
+            1) margin : 요소의 바깥쪽 영역 여백
+                margin-top
+                margin-right
+                margin-bottom
+                margin-left
+                
+                *한방
+                    margin: 전체(값 하나만 주면 사방에 다 들어감)
+                    margin: 1 2 3 4 (4개 다 준경우 top부터 시계방향대로 자리에 적용됨)
+                    margin: 1 2 3 (3개 준경우 첫번째값 1, 두번째값 2,4, 세번재는 3 자리 순서대로 적용)
+                    margin: 1 2 (2개 준경우 첫번째값 1,3 두번째값 2,4 자리 순서대로 적용)
+
+                *block레벨 요소 가운데 정렬하는 방법
+                    margin: 0 auto;
+                    margin: auto;
+
+            2) padding 요소의 안쪽 영역 여백
+                padding-top
+                padding-right
+                padding-bottom
+                padding-left
+                
+                *한방
+                    padding: 전체(값 하나만 주면 사방에 다 들어감)
+                    padding: 1 2 3 4 (4개 다 준경우 top부터 시계방향대로 자리에 적용됨)
+                    padding: 1 2 3 (3개 준경우 첫번째값 1, 두번째값 2,4, 세번재는 3 자리 순서대로 적용)
+                    padding: 1 2 (2개 준경우 첫번째값 1,3 두번째값 2,4 자리 순서대로 적용)
+
+                *사이즈를 정해둔 상태에서 padding이 들어가면 뚱뚱해짐
+                    box-sizing: border-box; (뚱뚱이 방지, padding/border를 다 가지고 들어옴)
+
+        */
+        body{
+            margin: 0;
+        }
+        .outer{
+            width: 300px;
+            height: 300px;
+            background-color: pink;
+        
+        }
+        #outer1{
+            /* margin: 10px 50px;  */
+            /* margin: auto; */
+        }
+        #outer2{
+            background-color: skyblue;
+            padding: 20px;
+            box-sizing:border-box;
+        }
+        .txt{
+            padding: 10px 20px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="outer" id="outer1">
+        <div class="inner">box1</div>
+    </div>
+    <div class="outer" id="outer2">
+        <div class="inner">box2</div>
+    </div>
+    <input type="text">
+    <input type="text" class="txt">
+</body>
+</html>
