@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            1) color: 글자색/(테두리색)
+            2) text-align : inline요소의 가로방향 정렬
+                            *컨텐츠 영역보다 넓은 조상에게 적용해야함
+                            left, right, center
+            3) text-decoration: 선 위치/모양
+                                line-through: 중앙선
+                                underline: 밑줄
+                                overline: 윗줄
+                                none: 줄 없앰
+            4) text-transform: 대소문자 변경
+                                capitalize: 각 단어의 첫번째 문자만 대문자로 변경
+                                uppercase: 싹다 대문자로
+                                lowercase: 싹다 소문자로
+            5) text-shadow: 글자 그림자
+                            물리적인 px 없음
+                            사용법: x축 y축 번짐도 색상
+                                * x,y축 단위는 음수, 양수 다 가능
+                                    번짐도는 양수로만가능
+                            그림자를 여러 방향으로 쓸때는 , 로 추가하면됨
+                box-shadow: 박스 그림자
+                            물리적인 px 없음
+                            사용벅 x축 y축 번짐도 두께 색상
+                                *border 대신 테두리 주는것 같은 효과도 가능하다
+        */
+        .txt1 {
+            text-align: center;
+        }
+        a{
+            color: red;
+            text-decoration: line-through;
+        }
+        .txt3{
+            text-transform: uppercase;
+            text-shadow: 1px 20px 2px red, 1px 40px 5px blue;
+        }
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            box-shadow: 5px 5px 20px 2px #666;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="txt1">
+        아아아아아
+    </div>
+    <div class="txt2">
+        <a href="">아아아아아</a>
+    </div>
+    <div class="txt3">
+        HeLlo woRLd
+    </div>
+    <div class="box"></div>
+</body>
+</html>

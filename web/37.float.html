@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            float: 요소의 레벨과 상관 없이 정렬
+                    left, right, none
+                
+                **주의
+                자식 요소에 float 속성이 적용되어 있으면 부모는 그 사이즈를 구할 수 없다.
+
+            - 부모가 높이값 잡는 방법 -
+                1) 부모에 높이값 직접 적용 - 자식들의 높이가 유동적일경우 일일히 수정해줘야됨
+                2) overflow: hidden 적용 - 자식들의 높이값을 자동으로 잡음
+                3) 부모에도 float 적용 - (최대한 쓰지말것. 개미지옥)
+                4) 내부에 clearfix 적용 - (마지막 자식은 float 없이 clear:both 가지면 됨)
+                
+            - clear: 상위요소(부모 또는 화면상 마지막 float 다음 요소)의 float 위치를 알아내서 다음줄에 그려짐
+                    left, right, none
+        */
+
+        .box{
+            width: 100px;
+            height: 100px;
+        }
+        .red{   
+            background-color: red;
+            float: left;
+        }
+        .green{
+            background-color: green;
+            float: left;
+        }
+        .blue{
+            background-color: blue;
+            float: left; 
+        }
+        .orange{
+            width: 100%;
+            height: 150px;
+            background-color: orange;
+        }
+        .tmp{
+            width: 100%;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="tmp">
+            <div class="box red"></div>
+            <div class="box green"></div>
+            <div class="box blue"></div>
+        </div>
+        <div class="box orange"></div>
+    </div>
+</body>
+</html>
