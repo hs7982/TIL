@@ -1,56 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body {
-            margin: 0;
-        }
+        body { margin: 0;}
+        
+    /* 
+        1. ul 점빼기
+        2. ul 여백 빼기
+        3. li 사이즈 (1/n)
+        4. li 테두리
+        5. li 옆으로 나열 (float)
+        6. ul의 높이 잡기 (직접주기/overflow/clearfix)
+        7. 글씨 가운데 정렬
+    */
 
-        .menu {
-            width: calc((100% - (10px * 5)) / 6);
-            height: 100px;
-            margin-right: 10px;
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .outer_ul {
+            width: 100%;
+
+            /* 방법1 - 부모에 높이 대놓고 줘서 자식들이 100%로 따라오게 하기 */
+            /* height: 100px; */
+            
+            /* 방법2: 자식들이 직점 100px 가지고 있고 부모가 overflow 로 알아서 잡게 하기 */
+            overflow: hidden;
+
             background-color: bisque;
-            float: left;
+        }
+        .outer_li {
             border: 1px solid;
             box-sizing: border-box;
+
+            width: calc((100% - (10px * 5)) / 6);
+            /* 방법1 */
+            /* height: 100%; */
+
+            /* 방법2 */
+            height: 100px;
+            margin-right: 10px;
+
+            float: left;
             text-align: center;
             line-height: 100px;
         }
-        p{
-            margin: 10px 10px;
-        }
-        .end {
-            margin-right: 0;
-        }
-
-        .wrap {
-            background-color: antiquewhite;
-            overflow: hidden;
+        .inner_ul {
+            background-color: skyblue;
+            line-height: 50px;
+            /* display: none; */
         }
 
-        .box {
-            background-color: aqua;
+        .box{
             width: 100%;
             height: 400px;
+            background-color: aqua;
         }
+
+        .mr_0 {margin-right: 0px;}
+
     </style>
 </head>
-
 <body>
-    <div class="wrap">
-        <div class="menu">menu1</div>
-        <div class="menu">menu2</div>
-        <div class="menu">menu3</div>
-        <div class="menu">menu4</div>
-        <div class="menu">menu5</div>
-        <div class="menu end">menu6</div>
-    </div>
+    <ul class="outer_ul">
+        <li class="outer_li">menu1</li>
+        <li class="outer_li">menu2</li>
+        <li class="outer_li">menu3</li>
+        <li class="outer_li">menu4</li>
+        <li class="outer_li">menu5</li>
+        <li class="outer_li mr_0">menu6</li>
+    </ul>
     <div class="box"></div>
 </body>
-
 </html>
