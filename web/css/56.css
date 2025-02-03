@@ -1,0 +1,133 @@
+body {margin: 20px 0;}
+
+#wrap {
+    width: 1280px;
+    margin: 0 auto;
+
+}
+.grow {
+    flex-grow: 1;
+}
+
+.header1 {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    gap: 16px;
+}
+.header1 .icon {
+    background-size: 452px 436px;
+    background-image: url(../img/naver.png);
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 32px;
+
+}
+
+.icon_menu {
+    background-position: -310px -166px;
+}
+
+.icon_pay {
+    background-position: -248px -260px;
+}
+
+.icon_talk {
+    background-position: -98px -316px;
+}
+
+.icon_noti {
+    background-position: -310px -232px;
+}
+
+.icon_shop {
+    background-position: -32px -316px;
+}
+.header2 {
+    width: 710px;
+    height: 60px;
+    margin: 0 auto;
+}
+.search {
+    border: 1px solid #03c75a;
+    border-radius: 30px;
+    display: flex;
+
+    padding: 17px 21px;
+}
+
+.logo {
+    width: 24px;
+    height: 24px;
+    margin-right: 20px;
+}
+
+.inp_serach {
+    height: 100%;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    padding: 0;
+    font-size: 20px;
+}
+
+.search_btn {
+    width: 24px;
+    height: 24px;
+    margin-left: 18px;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav {
+    width: 680px;
+    margin: 0 auto;
+}
+
+.item {
+    /* border: 1px solid; */
+    border-radius: 16px;
+    box-shadow: 0 0 5px 0 #dbdbdb;
+    width: 44px;
+    height: 44px;
+    cursor: pointer;
+}
+
+.service_name {
+    margin: 8px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+main {
+    width: 1280px;
+    height: 600px;
+    margin: 0 auto;
+}
+
+#sec1 {
+    width: 70%;
+    float: left;
+}
+#sec2{
+    width: calc(30% - 25px);
+    margin-left: 25px;
+    float: left;
+}
+
+.box {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 10px 0;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.login {
+    text-align: center;
+}
