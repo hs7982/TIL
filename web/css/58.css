@@ -1,0 +1,209 @@
+body{margin: 0;}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.flex_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrap {
+    position: relative;
+    padding-top: 65px;
+    padding-left: 250px;
+}
+
+.menu_btn {
+    width: 40px;
+    height: 40px;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='40' height='41' fill='#000' viewBox='0 0 40 41'%3e%3cg clip-path='url(%23a)'%3e%3cpath fill='%23525661' d='M28 26.957a.7.7 0 1 0 0-1.4v1.4Zm-16-1.4a.7.7 0 1 0 0 1.4v-1.4Zm16-4.6a.7.7 0 1 0 0-1.4v1.4Zm-16-1.4a.7.7 0 1 0 0 1.4v-1.4Zm16-4.6a.7.7 0 1 0 0-1.4v1.4Zm-16-1.4a.7.7 0 1 0 0 1.4v-1.4Zm16 12H12v1.4h16v-1.4Zm0-6H12v1.4h16v-1.4Zm0-6H12v1.4h16v-1.4Z'/%3e%3c/g%3e%3cdefs%3e%3cclipPath id='a'%3e%3crect width='40' height='40' y='.5' fill='%23fff' rx='20'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e") no-repeat;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 65px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    background-color: white;
+
+    display: flex;
+    justify-content: space-between;
+}
+.header_L {
+    display: flex;
+    gap: 10px;
+}
+
+.header_M {
+    margin: 10px 0;
+    display: flex;
+    width: 400px;
+    background-color: #f6f6f6;
+    border-radius: 100px;
+    overflow: hidden;
+}
+
+.header_R {
+    display: flex;
+    gap: 30px;
+}
+
+.input_search {
+    width: 100%;
+    border: 0;
+    background-color: #f6f6f6;
+    outline: none;
+    padding: 0 10px 0 20px;
+    display: flex;
+}
+
+.search_icon {
+    display: flex;
+    width: 32px;
+    align-items: center;
+    padding-right: 12px;
+}
+
+.noti {
+    width: 25px;
+}
+.login {
+    width: 43px;
+}
+.ham {
+    width: 40px;
+}
+
+aside {
+    position: fixed;
+    top: 65px;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    box-sizing: border-box;
+    background-color: white;
+
+    padding: 20px;
+}
+
+.side_menu_ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.side_menu_item {
+    display: flex;
+    align-items: center;
+    height: 42px;
+    font-size: 17px;
+    padding-left: 15px;
+    cursor: pointer;
+}
+
+.side_menu_top {
+    border-bottom: 1px solid #dfdfdf;
+    margin-bottom: 20px;
+}
+
+.popul {
+    padding-left: 15px;
+    border-bottom: 1px solid #dfdfdf;
+    margin-bottom: 20px;
+}
+
+.popul_item {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.circle {
+    width: 30px;
+    height: 30px;
+    background-color: #dfdfdf;
+    border-radius: 50px;
+    margin-right: 7px;
+}
+
+.popul_item_name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.game {
+    font-size: 11px;
+    color: gray;
+}
+
+.bj_name {
+    font-size: 14px;
+}
+
+main {
+    padding: 20px;
+}
+
+.main_banner {
+    display: flex;
+    background-color: #17191c;
+    width: 100%;
+    /* height: 350px; */
+    height: 25vw;
+    border-radius: 100px 30px;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.main_banner_L {
+    width: 70%;
+    background-image: url(../img/afreeca_banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.main_popul_live > ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.live_item {
+    width: calc((100% - (20px * 4)) / 5);
+    background-color: beige;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+.live_img {
+    width: 100%;
+    height: 100px;
+    background-color:#dfdfdf;
+}
+
+.live_title {
+    padding: 10px;
+}
+
+.main_popul_cat > ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.cat_item {
+    width: calc((100% - (20px * 4)) / 5);
+    height: 250px;
+    background-color: beige;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px;
+}
