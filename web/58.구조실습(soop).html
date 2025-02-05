@@ -29,17 +29,6 @@
                     <img src="https://res.sooplive.co.kr/images/svg/soop_logo.svg" alt="SOOP" class="logo_img">
                 </a>
             </div>
-            <div class="header_M">
-                <input type="search" class="input_search">
-                <div class="search_icon">
-                    <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 25'>
-                        <path fill='#525661'
-                            d='M16.923 16.06a.7.7 0 0 0-.973 1.006l.973-1.007Zm2.887 4.74a.7.7 0 1 0 .974-1.006L19.81 20.8Zm-3.86-3.734 3.86 3.734.974-1.006-3.86-3.735-.974 1.007Z' />
-                        <path stroke='#525661' stroke-linecap='round' stroke-width='1.4'
-                            d='M18.703 11.203a7.5 7.5 0 1 1-15 0 7.5 7.5 0 0 1 15 0Z' />
-                    </svg>
-                </div>
-            </div>
             <div class="header_R">
                 <div class="noti flex_center">
                     <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 25'>
@@ -53,6 +42,17 @@
                         <path fill='#525661' fill-rule='evenodd'
                             d='M21 13.383a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm0 6a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm-1.5 7.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z'
                             clip-rule='evenodd' />
+                    </svg>
+                </div>
+            </div>
+            <div class="header_M">
+                <input type="search" class="input_search">
+                <div class="search_icon">
+                    <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 25'>
+                        <path fill='#525661'
+                            d='M16.923 16.06a.7.7 0 0 0-.973 1.006l.973-1.007Zm2.887 4.74a.7.7 0 1 0 .974-1.006L19.81 20.8Zm-3.86-3.734 3.86 3.734.974-1.006-3.86-3.735-.974 1.007Z' />
+                        <path stroke='#525661' stroke-linecap='round' stroke-width='1.4'
+                            d='M18.703 11.203a7.5 7.5 0 1 1-15 0 7.5 7.5 0 0 1 15 0Z' />
                     </svg>
                 </div>
             </div>
@@ -120,12 +120,15 @@
             <div class="main_banner">
                 <div class="main_banner_L">
                 </div>
-                <div>
-
+                <div class="main_banner_R">
+                    <div>생방송 제목</div>
+                    <div>생방송 제목</div>
+                    <div>생방송 제목</div>
+                    <div>생방송 제목</div>
                 </div>
             </div>
-            <div class="main_popul_live">
-                <h2>인기 LIVE</h2>
+            <section class="sec main_popul_live">
+                <h2 class="main_sec_title">인기 LIVE</h2>
                 <ul>
                     <li class="live_item">
                         <div class="live_img"></div>
@@ -168,9 +171,9 @@
                         <div class="live_title">생방송 제목</div>
                     </li>
                 </ul>
-            </div>
-            <div class="main_popul_cat">
-                <h2>인기 카테고리</h2>
+            </section>
+            <section class="main_popul_cat">
+                <h2 class="main_sec_title">인기 카테고리</h2>
                 <ul>
                     <li class="cat_item">
                         카테고리
@@ -188,8 +191,26 @@
                         카테고리
                     </li>
                 </ul>
-            </div>
+            </section>
         </main>
+        <footer>
+            <div class="adr">
+                <span>주식회사 숲</span>
+                <span>대표이사 : 서수길, 정찬용</span>
+                <span>사업자번호 : 220-81-10886</span>
+                <span>통신판매번호 제2010-경기성남-0834</span>
+                <span>사업자 정보 확인</span>
+                <span class="end">호스팅 제공자 : 주식회사 숲</span>
+            </div>
+            <div class="adr">
+                <span>주소 : 경기도 성남시 분당구 판교로228번길 15 판교세븐밴처밸리 1단지 2동 주식회사 숲(삼평동)</span>
+                <span>FAX : 031-622-8008</span>
+                <span class="end">soop@sooplive.co.kr(1688-7022)</span>
+            </div>
+            <div class="flex_center">
+            ⓒ SOOP Corp.
+        </div>
+        </footer>
     </div>
 </body>
 

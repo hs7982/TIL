@@ -5,6 +5,19 @@ ul {
     list-style-type: none;
 }
 
+/* 스크롤바 커스텀 */
+/* aside::-webkit-scrollbar {
+    width: 10px;
+}
+aside::-webkit-scrollbar-track {
+    background-color: red;
+
+}
+aside::-webkit-scrollbar-thumb {
+    background-color: blue;
+    border-radius: 10px;
+} */
+
 .flex_center {
     display: flex;
     justify-content: center;
@@ -45,9 +58,12 @@ header {
     margin: 10px 0;
     display: flex;
     width: 400px;
+    height: 45px;
     background-color: #f6f6f6;
     border-radius: 100px;
     overflow: hidden;
+    position: absolute;
+    left: calc(50% - 200px);
 }
 
 .header_R {
@@ -85,10 +101,11 @@ aside {
     position: fixed;
     top: 65px;
     left: 0;
-    height: 100%;
+    height: calc(100% - 65px);
     width: 250px;
     box-sizing: border-box;
     background-color: white;
+    overflow: auto;
 
     padding: 20px;
 }
@@ -155,18 +172,25 @@ main {
     background-color: #17191c;
     width: 100%;
     /* height: 350px; */
-    height: 25vw;
+    height: 20vw;
     border-radius: 100px 30px;
     margin-bottom: 30px;
     overflow: hidden;
 }
 
 .main_banner_L {
-    width: 70%;
-    background-image: url(../img/afreeca_banner.jpg);
-    background-repeat: no-repeat;
+    width: 75%;
+    background: url(../img/afreeca_banner.jpg) no-repeat center;
     background-size: cover;
-    background-position: center;
+}
+
+.main_banner_R {
+    width: 25%;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: #fff;
 }
 
 .main_popul_live > ul {
@@ -185,14 +209,20 @@ main {
 
 .live_img {
     width: 100%;
-    height: 100px;
+    height: 150px;
     background-color:#dfdfdf;
 }
 
 .live_title {
     padding: 10px;
 }
-
+.sec {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #dfdfdf;
+}
+.main_sec_title {
+    margin: 40px 0 20px;
+}
 .main_popul_cat > ul {
     display: flex;
     flex-wrap: wrap;
@@ -205,5 +235,28 @@ main {
     background-color: beige;
     border-radius: 10px;
     overflow: hidden;
+    box-sizing: border-box;
     padding: 10px;
+}
+
+footer {
+    padding: 20px;
+    border-top: 1px solid #dfdfdf;
+}
+
+footer .adr {
+    display: flex;
+    justify-content: center;
+    color: gray;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.adr span {
+    padding: 0 8px;
+    border-right: 1px solid #dfdfdf;
+}
+
+.adr .end {
+    border-right: none;
 }
