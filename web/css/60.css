@@ -1,0 +1,203 @@
+body {
+    margin: 0;
+}
+#wrap {
+    min-width: 1140px;
+}
+.inner {
+    width: 1140px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.topbanner_wrap {
+    height: 40px;
+    width: 100%;
+    position: relative;
+}
+.topbanner_back_L {
+    width: 50%;
+    height: 100%;
+    float: left;
+    background-color: #ee004d;
+}
+.topbanner_back_R {
+    width: 50%;
+    height: 100%;
+    float: left;
+    background-color: #fc0076;
+}
+
+.topbanner_imgbox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+}
+
+.main_header {
+    width: 100%;
+    height: 127px;
+}
+
+.main_header_1 {
+    height: 87px;
+    width: 100%;
+}
+
+
+.logo {
+    width: 160px;
+    height: 28px;
+    margin: auto 0;
+    background: url(../img/텐바이텐/logo.png) no-repeat center / cover;
+}
+
+.header_content {
+    display: flex;
+}
+
+.blind {
+    display: block;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    margin: 0;
+}
+
+.top_nav {
+    width: calc(100% - 160px);
+    display: flex;
+    flex-direction: column;
+}
+
+.login_tool {
+    display: flex;
+    justify-content: end;
+    gap: 22px;
+    margin-top: 10px;
+    font-size: 14px;
+    align-items: center;
+}
+
+.line {
+    border-right: 1px solid #888;
+    width: 1px;
+    height: 10px;
+}
+
+.nav_item {
+    cursor: pointer;
+}
+
+.nav_search {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 25px;
+    margin-top: 15px;
+}
+.nav_search > .nav_item {
+    font-weight: 700;
+    font-size: 18px;
+}
+.search {
+    border: 1.5px solid #fc0076;
+    border-radius: 50px;
+    width: 300px;
+    height: 32px;
+    box-sizing: border-box;
+    overflow: hidden;
+    
+}
+.search > input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding: 0 12px;
+    outline: none;
+}
+.point {
+    color: #fc0076;
+}
+
+
+.main_header_2 {
+    height: 40px;
+    width: 100%;
+    background-color: beige;
+}
+
+.main_header_2 > .header_content {
+    gap: 15px;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.main_banner > ul {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    
+}
+.main_banner_1 {
+    background: url(../img/텐바이텐/메인배너1.jpg) no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.main_banner_2 {
+    background: url(../img/텐바이텐/메인배너2.jpg) no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+
+.main_banner > * > h2 {
+    position: absolute;
+    top: 60px;
+    font-size: 50px;
+}
+.main_banner > * > span {
+    position: absolute;
+    top: 180px;
+    font-size: 25px;
+}
+
+.just1 {
+    height: 440px;
+    box-sizing: border-box;
+    background: url(../img/텐바이텐/JUST1Day_패턴.png);
+    padding: 58px 0;
+}
+
+.just1_content {
+    display: flex;
+}
+.just1_item {
+    width: 300px;
+}
+.just1_img {
+    width: 200px;
+    height: 200px;
+    border: 10px solid #fff;
+    border-radius: 500px;
+    box-shadow: 0 0 15px 1px #999;
+    background: url(../img/텐바이텐/JUST1Day_1.jpg) no-repeat center / cover;
+    margin: 0 auto;
+}
