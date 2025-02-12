@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #wrap {
+            width: 500px;
+            border: 1px solid;
+        }
+
+        .btn_box {
+            width: 100%;
+            height: 50px;
+            display: flex;
+        }
+
+        .btn_box label {
+            width: calc(100% / 4);
+            height: 50px;
+            /* border-right: 1px solid; */
+            box-shadow: 1px 0 0 0 #000;
+            box-sizing: border-box;
+
+            line-height: 48px;
+            text-align: center;
+            /* border-right: 1px solid; */
+        }
+
+        .pan_box {
+            width: 100%;
+            height: 400px;
+            /* border: 1px solid; */
+        }
+
+        .pan {
+            width: 100%;
+            height: 100%;
+            display: none;
+
+        }
+
+        input {display: none;}
+        label {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        input[id="rd_red"]:checked ~ .btn_box label:nth-child(1),
+        input[id="rd_red"]:checked ~ .pan_box > .red  {
+            background-color: red;
+            display: block;
+        }
+
+        input[id="rd_green"]:checked ~ .btn_box label:nth-child(2),
+        input[id="rd_green"]:checked ~ .pan_box > .green  {
+            background-color: green;
+            display: block;
+        }
+
+        input[id="rd_blue"]:checked ~ .btn_box label:nth-child(3),
+        input[id="rd_blue"]:checked ~ .pan_box > .blue  {
+            background-color: blue;
+            display: block;
+        }
+
+        input[id="rd_gray"]:checked ~ .btn_box label:nth-child(4),
+        input[id="rd_gray"]:checked ~ .pan_box > .gray  {
+            background-color: gray;
+            display: block;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <input type="radio" name="rd" id="rd_red" checked>
+        <input type="radio" name="rd" id="rd_green">
+        <input type="radio" name="rd" id="rd_blue">
+        <input type="radio" name="rd" id="rd_gray">
+        <div class="btn_box">
+                <label for="rd_red">빨</label>
+                <label for="rd_green">초</label>
+                <label for="rd_blue">파</label>
+                <label for="rd_gray">회</label>
+            
+        </div>
+        <div class="pan_box">
+            <div class="pan red"></div>
+            <div class="pan green"></div>
+            <div class="pan blue"></div>
+            <div class="pan gray"></div>
+        </div>
+    </div>
+</body>
+
+</html>
