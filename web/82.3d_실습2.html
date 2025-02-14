@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {background-color: #d7d7d7;}
+        .outer {
+            width: 300px;
+            height: 300px;
+            border: 1px solid;
+
+            margin: 100px auto;
+            perspective: 400px;
+            
+        }
+        .outer:hover > .green {
+            transform: rotateY(360deg);
+            
+        }
+        .green {
+            width: 300px;
+            height: 300px;
+
+            background: green url(img/pikachu/pikachu01.png) no-repeat center / contain;
+
+            transform-style: preserve-3d;
+            transition: all 3s;
+
+            position: relative;
+        }
+
+        .white {
+            width: 150px;
+            height: 150px;
+            background: rgba(255, 255, 255, 0.5) url(img/pikachu/pikachu01.png) no-repeat center / contain;
+
+
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%) translateZ(100px);
+
+        }
+        .two {
+            transform: translate(-50%, -50%) translateZ(-100px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outer">
+        <div class="green">
+            <div class="white"></div>    
+            <div class="white two"></div>  
+        </div>
+    </div>
+</body>
+
+</html>

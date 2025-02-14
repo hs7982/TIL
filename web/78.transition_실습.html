@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer {
+            display: flex;
+            align-items: start;
+            border: 1px solid;
+            height: 400px;
+        }
+        .outer > div {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            margin: 0 5px;
+            text-align: center;
+            color: #fff;
+            font-weight: 900;
+            font-size: 18px;
+        }
+        .outer:hover > div {
+            height: 400px;
+        }
+        .ease {
+            transition: all 3s ease ;
+        }
+        .linear {
+            transition: all 3s linear ;
+        }
+        .ease-in{
+            transition: all 3s ease-in;
+        }
+        .ease-out{
+            transition: all 3s ease-out;
+        }
+        .ease-in-out{
+                transition: all 3s ease-in;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="ease">1</div>
+        <div class="linear">2</div>
+        <div class="ease-in">3</div>
+        <div class="ease-out">4</div>
+        <div class="ease-in-out">5</div>
+    </div>
+</body>
+</html>

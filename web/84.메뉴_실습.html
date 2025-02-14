@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body { margin: 0;}
+        .nav_wrap {
+            position: relative;
+            display: flex;
+            
+        }
+        .nav {
+            width: calc(100% / 4);
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            background-color: skyblue;
+            border: 1px solid red;
+            box-sizing: border-box;
+
+            
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            background-color: orange;
+            display: absolute;
+            
+            /* display: none; */
+
+            /* transform: scale(1,0);
+            transform-origin: top; */
+
+            height: 0;
+            overflow: hidden;
+            transition: all 0.5s;
+        }
+        
+        .nav:hover > ul {
+            /* display: block; */
+            /* transform: scale(1); */
+            height: 150px;
+        }
+        li:hover {
+            background-color: yellow;
+        }
+        main {
+            width: 100%;
+            height: 300px;
+            background-color: purple;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav_wrap">
+    <div class="nav">
+        menu
+        <ul>
+            <li>sec1</li>
+            <li>sec2</li>
+            <li>sec3</li>
+        </ul>
+    </div>
+    <div class="nav">
+        menu
+        <ul>
+            <li>sec1</li>
+            <li>sec2</li>
+            <li>sec3</li>
+        </ul>
+    </div>
+    <div class="nav">
+        menu
+        <ul>
+            <li>sec1</li>
+            <li>sec2</li>
+            <li>sec3</li>
+        </ul>
+    </div>
+    <div class="nav">
+        menu
+        <ul>
+            <li>sec1</li>
+            <li>sec2</li>
+            <li>sec3</li>
+        </ul>
+    </div>
+</div>
+    <main></main>
+</body>
+</html>

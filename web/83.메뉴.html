@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body { margin: 0;}
+        .nav {
+            width: 200px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            background: skyblue;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            background-color: orange;
+            
+            
+            /* transform: scale(1,0);
+            transform-origin: top; */
+
+            height: 0;
+            overflow: hidden;
+
+            transition: all 1s;
+        }
+        .nav:hover > ul {
+            /* transform: scale(1); */
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        menu
+        <ul>
+            <li>sec1</li>
+            <li>sec2</li>
+            <li>sec3</li>
+        </ul>
+    </div>
+</body>
+</html>
