@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div 면서 클래스가 txt 인 요소들만 색칠 */
+        div.txt {
+            color: red;
+        }
+
+        /* box 안에 있는 div 에만 색칠 */
+        .box > div.txt {
+            color: blue;
+        }
+
+        /* 헬로월드5 들 한테만 배경색 칠하기 */
+        div:nth-child(5) {
+            background: orange
+        }
+
+        /* .box랑 span 제외한 모든 요소에 색 칠하기 */
+        .txt:not(span) {
+            background: skyblue
+        }
+
+        /* 하단 헬로월드3 만 글자색 변경 */
+        .box ~ p.txt {
+            color: hotpink;
+        }
+
+        /* .box 아래 있는 .txt 들에만 hover 걸기 */
+        .box ~ .txt:hover {
+            background: red;
+        }
+
+        /* (클래스 레벨의 경우)둘이 같은 요소에 들어가려고 할때 선택자 하나짜리보다 여러개 짜리가 더 우선취급 됨 */
+        .txt2 {
+            font-size: 30px;
+        }
+        .box p {
+            font-size: 5px;            
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <div class="txt">헬로월드1</div>
+        <span class="txt">헬로월드2</span>
+        <p class="txt txt2" id="ppp">헬로월드3</p>
+        <div class="txt">헬로월드4</div>
+        <div class="txt">헬로월드5</div>    
+    </div>
+    <hr>
+    <div class="txt">헬로월드1</div>
+    <span class="txt">헬로월드2</span>
+    <p class="txt txt2">헬로월드3</p>
+    <div class="txt">헬로월드4</div>
+    <div class="txt">헬로월드5</div>    
+</body>
+</html>
