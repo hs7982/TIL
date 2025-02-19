@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            border: 1px solid;
+
+            background-color: red;
+        }
+        .box1 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            
+            animation: bg_color 1s infinite, move 3s infinite ;
+            
+        }
+        @keyframes move {
+            0%   {left: 0;     top: 0;}
+            40%   {left: 0;     top: 0;}
+            55%  {left: 200px; top: 0;}
+            70%  {left: 200px; top: 200px;}
+            85%  {left: 0;     top: 200px;}
+            100% {left: 0;     top: 0;}
+        }
+        @keyframes bg_color {
+            0% {background-color: red;}
+            50% {background-color: green;}
+            100% {background-color: blue;}
+        }
+
+
+
+        .box2 {
+            margin-top: 400px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            
+            animation: bg_color 0.5s infinite, move2 3s infinite ;
+        }
+        @keyframes move2 {
+            0% {left: 0; top: 0;}
+            20% {left: 0; top: 0;}
+            30% {left: 200px; top: 0;}
+            40% {left: 200px; top: 200px;}
+            50% {left: 0; top: 200px;}
+            60% {left: 0; top: 0;}
+            70% {left: 200px; top: 200px;}
+            80% {left: 200px; top: 0;}
+            90% {left: 0; top: 200px;}
+            100% {left: 0; top: 0;}
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+</body>
+</html>
