@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    /*
+        숫자 두개 입력 받아서 그 수의 합이 홀수면 "홀수입니다", 짝수면 "짝수 입니다." 출력하기
+
+        1. 숫자 두개 입력받아서 저장
+        2. 두개 더하고 저장
+        3. %2 해서 0 인지 1인지 판별
+    */
+
+    // let num1 = +prompt();
+    // let num2 = +prompt();
+
+    // let total = num1 + num2;
+
+    // console.log(total)
+
+    // if(total % 2 == 0) {
+    //     console.log("짝")
+    // }
+    // else if(total % 2 == 1) {
+    //     console.log("홀")
+    // }
+    
+    // -------------------------------------
+    let num = +prompt();
+    // num += +prompt();
+    num = num + +prompt()
+    if(num % 2 == 0) {
+        console.log("짝")
+    }
+    else if(num % 2 == 1) {
+        console.log("홀")
+    }
+
+    // console.log(+prompt() + +prompt() % 2 ?"짝":"홀")
+</script>
+</body>
+</html>

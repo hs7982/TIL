@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+        자료형 확인 : typeof(확인할 자료) 
+        */
+        console.log("AAA")
+        console.log(typeof("string"))
+
+        console.log("AAA" + " " + typeof("AAA"))
+        console.log("AAA" , typeof("AAA"))
+
+        console.log(100 + 100) //200
+        console.log(100 , 100) //100 100
+
+        /*
+            -자료형 변환
+                우선순위 : 문자 > 숫자 > boolean
+                        (다른 형태끼리의 자료가 만났을때의 결과)
+                
+                1) 다른 자료형끼리의 결합
+                2) 내장함수 사용
+                    Number(), String()
+                    * Number()를 간단히 대체하는 방법 : +
+        */
+       //1번
+        console.log(100 + "100")
+        console.log(100 + 100 + "100") //200100
+        console.log("100" + 100 + 100) //100100100
+
+        console.log("100" + (100 + 100)) //100200
+        console.log(("100" + 100) + 100) //100100100
+
+        // 2번
+        console.log(typeof( String(100) )) //string
+        console.log(typeof( Number("100") )) //number
+        console.log(typeof( Number("a") )) //number
+
+        console.log(Number("100" + "100")) //100100
+
+        console.log(+("100"+"100")) //number) 200
+
+        console.log(100+100+100+"") // string) 300
+    </script>
+</body>
+</html>

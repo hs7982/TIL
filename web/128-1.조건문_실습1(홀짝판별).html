@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    /*
+        숫자 하나 입력 받아서 그 수가 홀수면 "홀수입니다", 짝수면 "짝수 입니다." 출력하기
+
+        1. 숫자 하나 입력 받고 저장 & 숫자형으로 변환=> let num = +prompt();
+        2. 저장한 수 이용해서 홀 짝 판별하기 
+            저장한 수 % 2 해서 나머지가 0이면 '짝'
+                                      1이면 '홀'
+        3. 출력하기 => console.log()
+
+    */
+        
+    let num = prompt();
+    if(num % 2 == 0) {
+        console.log("짝")
+    }
+    else if(num % 2 == 1) {
+        console.log("홀")
+    }
+    
+
+</script>
+</body>
+</html>
