@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*자신의 몸무게(kg)를 키의 제곱(m)으로 나눈 값*/
+
+        let cm = +prompt("키 cm 입력");
+        let kg = +prompt("몸무게 kg 입력");
+
+        let bmi = kg / ((cm/100)**2)
+        let bmiName = "저체중"
+
+        
+        if (bmi >= 25) 
+            bmiName = "비만"
+        else if (bmi >= 23)
+            bmiName = "과체중"
+        else if (bmi >= 18.5)
+            bmiName = "정상"
+
+        document.write(`BMI 결과: ${bmi.toFixed(3)}, ${bmiName}`)
+    </script>
+</body>
+
+</html>
