@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <input type="button" value="-" class="btn_down" onclick="mins()">
+        <input type="text" value="0" class="txt_qty">
+        <input type="button" value="+" class="btn_up" onclick="plus()">
+        <div>개당 금액 10,000원</div>
+        <hr>
+        <h2 id="total">최종금액: 0원</h2>
+    </div>
+    <script>
+        const txt = document.getElementsByClassName("txt_qty")[0];
+        const total = document.getElementById("total");
+
+        const updateTotal = () => {
+            total.innerText = `최종금액: ${(+txt.value * 10000).toLocaleString('kr')}원`; 
+        }
+
+        const mins = () => {
+            txt.value = +txt.value - 1;
+            updateTotal();
+        }
+
+        const plus = () => {
+            txt.value = +txt.value + 1;
+            updateTotal();
+        }
+    </script>
+</body>
+</html>

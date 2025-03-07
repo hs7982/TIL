@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+/*
+    - 문자열 찾기
+        1) 특정 문자열에서 필요한 위치에 있는 문자 또는 찾으려는 문자가 몇번째에 있는지 찾을수 있음.
+        2) 특정 위치부터 특정 위치까지 잘라낼수 있음
+        3) 특정 위치의 문자를 다른 문자로 치환
+        *카운트는 0부터
+*/
+    let str = "ABCDEFGHIJKLMNOPQRSTUVWXYDZ";
+    document.write(str+"<br>")
+    document.write("length: " + str.length+"<br>")
+
+    // 특정 문자의 위치 찾기 - 0부터 카운트
+    document.write("D의 위치: " + str.indexOf("D")+"<br>")
+
+</script>
+</body>
+</html>
