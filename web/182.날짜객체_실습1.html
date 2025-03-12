@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const addZero = (num) => {
+            if(num < 10) 
+                num = "0"+num;
+            return num;
+        }
+
+        const dt = new Date(2025,12,10,12,1,10);
+        console.log(dt)
+
+        const year = dt.getFullYear();
+        const month = addZero(dt.getMonth() + 1);
+        const date = addZero(dt.getDate());
+        const day = dt.getDay();
+
+        let hour = dt.getHours();
+        let pmam = "AM"
+        if(hour >= 12){
+            pmam="PM"
+            if(hour > 12) hour = hour - 12;
+        } 
+
+        const minute = dt.getMinutes();
+        const sec = dt.getSeconds();
+
+        const dayList = ["일요일", "월요일", "화요일", "수요일", "목요일", "금요일", "토요일"]
+        
+
+
+        document.write(`${year}년 ${month}월 ${date}일 ${dayList[day]}<br>`)
+        document.write(`${addZero(hour)}:${addZero(minute)}:${addZero(sec)} ${pmam}`)
+    
+    </script>
+</body>
+</html>

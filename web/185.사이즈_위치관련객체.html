@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+/*
+    화면, 브라우저 전체, 사용 가능한 브라우저 사이즈 를 구하는 객체
+
+    1) screen: 화면(뷰포트) 자체의 크기
+        width / height: 모든 영역의 크기
+        availWidth / availHeight: 작업표시줄을 제외한 실제 사용 가능한 영역 만큼의 사이즈
+
+        screenLeft / screenTop: 모니터 기준 현재 브라우저 왼쪽 위가 어디에 위치해 있는지 표시
+        screenRight / screenBottom: 구하는 방법???
+
+*/
+    document.write(screen.width +"<br>")
+    document.write(screen.height +"<br>")
+    document.write(screen.availWidth +"<br>")
+    document.write(screen.availHeight +"<br>")
+    document.write(window.screenLeft +"<br>")
+    document.write(window.screenTop +"<br>")
+
+</script>
+</body>
+</html>

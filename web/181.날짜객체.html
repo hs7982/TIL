@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+/*
+    Date객체 - 로컬시간을 나타낸다
+               자료형 - 숫자
+
+        getFullYear() => 년, 4자리
+        getMonth() => 월, 1자리
+                    0부터 표시되기 때문에 출력시 +1 해줘서 뽑아야함
+        getDate() => 일, 1자리
+        getDay() => 요일, 0-일요일/6-토요일
+        getHours() => 시, 1자리
+        getMinutes() => 분, 1자리
+        getSeconds() => 초, 1자리
+        getMilliseconds() => 밀리초, 1자리
+
+    - 생성자 함수 -
+        - 일반적으로 대문자로 시작함   
+        - 생성자 함수로 사용할때는 new 키워드를 사용
+
+    
+*/  
+    // 현재 로컬시간 구하기
+    let dt = new Date();
+    let year = dt.getFullYear();
+    let month = dt.getMonth() + 1;
+    let date = dt.getDate();
+    let day = dt.getDay();
+
+    let hour = dt.getHours();
+    let min = dt.getMinutes();
+    let sec = dt.getSeconds();
+    let m_sec = dt.getMilliseconds();
+
+    console.log(`${year}-${month}-${date} ${day} ${hour}:${min}:${sec}:${m_sec}`)
+///////////////////////////////////////////////////////////////
+
+    // 특정 날짜의 요일 구하기(시분초를 별도로 세팅하지 않으면 0시0분0초로 출력됨)
+    let dt2 = new Date(2025, 2,12);  // 요일 출력하고 싶으면 month를 -1 해서 입력
+    console.log(dt2)
+    console.log(dt2.getMonth())
+
+///////////////////////////////////////////////////////////////
+
+    // 날짜 더하기
+    
+    // 현재 로컬시간 구하기
+    // 주의: 기본 숫자형이기 때문에 그냥 더하면 월이나 일의 최대 수치를 넘어갈수 있다. 그래서 내장함수 사용
+    let dt3 = new Date(); // 2025, 2, 12 
+    let year3 = dt3.getFullYear();
+    let month3 = dt3.getMonth() + 1;
+    let date3 = dt3.getDate() + 30; // 이렇게 하면 30일보다 큰거 나옴
+    console.log(`${year3}-${month3}-${date3}`)
+
+    /*  
+        날짜를 더하거나 뺄때 년,월 이 바껴야 하는 경우 내장함수 사용
+        setMonth: 년이 바껴야 하는 상황이면 바꿈
+        setDate: 년/월 필요하면 모두 바꿈
+    */
+    dt3 = new Date(dt3.setDate(dt3.getDate() + 30)); // 2, 12 => 3, 11
+ // dt3 = new Date(dt3.setDate(42)); // 42에서 3월의 마지막날(31)을 빼면서 month 를 1 올리고 11을 date로 가지고 있음. (아래처럼 만들어짐)
+ // dt3 = new Date(3 , 11);
+    console.log(`${dt3.getFullYear()}-${dt3.getMonth() + 1}-${dt3.getDate() }`)
+
+</script>
+</body>
+</html>
